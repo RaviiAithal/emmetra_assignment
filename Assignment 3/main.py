@@ -38,16 +38,30 @@ def process_hdr():
         # Merge using Mertens fusion
         merge_mertens = cv.createMergeMertens()
         hdr_mertens = merge_mertens.process(img_list)
-        output_image = np.clip(hdr_mertens * 255, 0, 255).astype('uint8')
+        hdr_mertens = np.clip(hdr_mertens * 255, 0, 255).astype('uint8')
+        output_image = cv.cvtColor(hdr_mertens, cv.COLOR_BGR2RGB)  # Convert to RGB
         display_output(output_image)
     except Exception as e:
         print(f"Error processing HDR image: {e}")
 
 
+def save_output():
+    """Save the processed HDR image to a file."""
+    if output_image is not None:
+        try:
+            save_path = "output.jpg"
+            # Convert RGB to BGR for saving
+            cv.imwrite(save_path, cv.cvtColor(output_image, cv.COLOR_RGB2BGR))
+            print(f"Output image saved as {save_path}")
+        except Exception as e:
+            print(f"Error saving output image: {e}")
+    else:
+        print("No processed image available to save.")
+
+
 def display_output(img):
     """Display the processed image on a scrollable canvas."""
-    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-    img_pil = Image.fromarray(img_rgb)
+    img_pil = Image.fromarray(img)
 
     # Resize the image to fit the available display space while preserving aspect ratio
     max_width, max_height = canvas.winfo_width(), canvas.winfo_height()
@@ -77,8 +91,15 @@ root.config(bg="#f5f5f5")
 
 # Styles
 style = ttk.Style()
-style.configure("TButton", font=("Helvetica", 14, "bold"), padding=15, background="#007ACC", foreground="white")
-style.map("TButton", background=[("active", "#005F8A")])
+style.configure("TButton",
+                font=("Helvetica", 14, "bold"),
+                padding=15,
+                background="#007ACC",  # Button background color
+                foreground="black")    # Text color (black)
+
+style.map("TButton",
+          background=[("active", "#005F8A")],  # Background when active
+          foreground=[("active", "black")])   # Text color remains black when active
 style.configure("TLabel", font=("Helvetica", 12), background="#f5f5f5")
 
 # Header
@@ -114,6 +135,10 @@ for i, label_text in enumerate(["Low Exposure", "Mid Exposure", "High Exposure"]
 # Button to process HDR
 process_button = ttk.Button(root, text="Process HDR", command=process_hdr)
 process_button.grid(row=2, column=0, columnspan=5, pady=30, ipadx=30)
+
+# Button to save output image
+save_button = ttk.Button(root, text="Save Output", command=save_output)
+save_button.grid(row=4, column=0, columnspan=5, pady=20, ipadx=30)
 
 # Scrollable canvas for displaying output
 output_canvas_frame = Frame(root, bg="#f5f5f5")
