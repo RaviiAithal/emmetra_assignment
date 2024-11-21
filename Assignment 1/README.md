@@ -34,7 +34,7 @@ This project implements a basic **Image Signal Processing (ISP)** pipeline for s
 
 Below is a snapshot of the **Image Signal Processing Pipeline - Emmetra** GUI:
 
-![ISP Pipeline GUI](GUI.jpg)
+![ISP Pipeline GUI](gui.jpg)
 
 ---
 
