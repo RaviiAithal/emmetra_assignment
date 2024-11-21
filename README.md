@@ -13,13 +13,14 @@ This repository contains three assignments completed as part of the task provide
 
 ## Overview
 
-This repository contains three assignments that demonstrate various coding and problem-solving skills. Each assignment folder includes:
+This repository contains three assignments that is given by **Emmetra**. Each assignment folder includes:
 
-- Source code for the task  
-- Documentation or README specific to the task  
-- Outputs (if applicable)  
+- Source code
+- README 
+- Output
+- Input
 
-The assignments are implemented in **Python**, ensuring clean and efficient code.
+The assignments are implemented in **Python**.
 
 ---
 
@@ -123,5 +124,4 @@ Implement HDR imaging to merge and tone-map three differently exposed LDR images
 - Mertens fusion creates a balanced HDR image with improved shadow and highlight details.  
 - GUI simplifies workflow, making HDR processing intuitive and user-friendly.  
 
-This tool efficiently processes HDR images while ensuring ease of use through a responsive GUI.
 
