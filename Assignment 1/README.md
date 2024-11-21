@@ -55,7 +55,7 @@ pip install -r requirements.txt
 1. Clone the repository or copy the script file into your working directory.
 2. Run the script:
    ```bash
-   python main.py
+   python main_GUI.py
    ```
 3. Use the GUI to load, process, and save images.
 
