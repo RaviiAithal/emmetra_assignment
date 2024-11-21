@@ -61,17 +61,3 @@ To install and run this project, follow these steps:
 4. The output image will be displayed in a scrollable canvas.
 5. Click **Save Output** to save the processed HDR image as `output.jpg`.
 
-## License
-
-This project is licensed under the MIT License.
-
-## Author
-
-- **Ravi Aithal**
-```
-
-### Changes made:
-1. **GUI Screenshot**: Updated the image reference for the GUI screenshot to `![GUI Screenshot](images/gui_screenshot.png)` assuming that you have uploaded the GUI image in the `images/` folder. If the image is named differently, replace `gui_screenshot.png` with the actual filename.
-2. **Output Image**: Kept the reference for `output.jpg` to show the processed image.
-
-This way, both images (GUI screenshot and output image) will be displayed in the `README.md` when viewed on GitHub or other markdown viewers. Make sure that the image in the `images/` folder is named correctly as per the markdown link.
