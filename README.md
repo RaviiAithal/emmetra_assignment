@@ -82,8 +82,6 @@ Generate outputs with the following combinations and document observations in a 
 #### **Objective**  
 Implement and compare denoising and edge enhancement techniques for Bayer raw images.
 
----
-
 #### **Features**
 
 1. **Denoising**:
@@ -98,8 +96,6 @@ Implement and compare denoising and edge enhancement techniques for Bayer raw im
 3. **Comparison**:
    - Denoising methods and edge enhancement techniques evaluated based on SSNR and edge strength.
 
----
-
 #### **Usage**
 
 1. **Input**: Bayer raw image (`task2image.raw`).
@@ -108,15 +104,11 @@ Implement and compare denoising and edge enhancement techniques for Bayer raw im
    - Apply denoising filters (Median, Bilateral, Gaussian) and sharpen with Laplacian.
    - Save processed images: `denoised_<method>.png`, `sharpened_<method>.png`.
 
----
-
 #### **Requirements**
 
 - **Dependencies**: `opencv-python-headless`, `numpy`.
 - **Tools**: Use PixelViewer or IrfanView to view results.
 - **Resolution**: Ensure consistent resolution for input images.
-
----
 
 #### **Observations**
 
