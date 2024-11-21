@@ -100,22 +100,28 @@ Use **PixelViewer** or **IrfanView** (with RAW plugin) for visualizing input and
 
 ---
 
-### **Assignment 3: HDR Imaging**  
-This assignment focuses on implementing an HDR imaging algorithm using three differently exposed LDR images of a high-contrast scene.
+### Assignment 3: HDR Imaging
 
-#### Steps to Complete:  
-1. Capture three differently exposed LDR images manually (daylight or indoor scenes with bright and shadow regions).  
-2. Merge the three images into an HDR image.  
-3. Apply tone mapping to create an 8-bit image for display.  
+#### Objective  
+Implement HDR imaging to merge and tone-map three differently exposed LDR images using the Mertens fusion algorithm.
 
-#### Input and Output:  
-- **Input:** 3 LDR images captured manually.  
-- **Output:** Tone-mapped HDR image.
+#### Features  
+1. **GUI Tool**: Built with Tkinter for interactive image selection, processing, and saving.  
+2. **HDR Processing**: Uses OpenCV’s Mertens fusion to merge low, medium, and high-exposure images.  
+3. **Output Management**: Displays processed HDR image on a scrollable canvas and allows saving the result.  
 
-#### Deliverables:  
-A detailed report documenting:  
-1. The HDR merging algorithm.  
-2. The tone mapping process.  
-3. Observations and results.
+#### Usage  
+1. **Input**: Three LDR images (low, medium, high exposure) of the same scene.  
+2. **Run Script**: Use the "Browse" buttons to select images, then click "Process HDR" to merge and tone-map.  
+3. **Save**: Use the "Save Output" button to store the HDR result.  
 
+#### Requirements  
+- **Dependencies**: Install `opencv-python-headless`, `numpy`, and `pillow` via `pip install`.  
+- **Images**: Consistent resolution for input LDR images.
+
+#### Observations  
+- Mertens fusion creates a balanced HDR image with improved shadow and highlight details.  
+- GUI simplifies workflow, making HDR processing intuitive and user-friendly.  
+
+This tool efficiently processes HDR images while ensuring ease of use through a responsive GUI.
 
