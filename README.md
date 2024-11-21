@@ -53,27 +53,32 @@ emmetra-assignments/
 ---
   ## Assignment Details
 
-### **Assignment 1: Basic Image Signal Processing (ISP)**  
-This assignment involves implementing essential image signal processing routines for sensor raw images. The tasks include:  
-- **Demosaicing:** Edge-based interpolation (5x5) to compute missing channels.  
-- **White Balancing:** Using a simple gray-world algorithm to remove color casts.  
-- **Denoising:** Applying a Gaussian filter (5x5).  
-- **Gamma Correction:** Using sRGB gamma for converting 12-bit input to 8-bit output.  
-- **Sharpening:** Applying an unsharp masking filter.  
+**Assignment 1: Basic Image Signal Processing (ISP)**  
 
-#### Additional Features:  
-- A UI tool to control the parameters of each algorithm block for visualization and comparison.  
+**Objective**  
+- Implement a pipeline to process 12-bit Bayer raw images into visually enhanced 24-bit RGB images.  
+- Develop a user-friendly GUI to allow real-time visualization and parameter tuning.  
+- Demonstrate the effects of ISP techniques such as demosaicing, white balancing, denoising, gamma correction, and sharpening.  
 
-#### Input and Output:  
-- **Input:** 12-bit Bayer raw image (GRBG, 1920x1280).  
-- **Output:** 24-bit RGB image (8 bits per channel).  
+**Features**  
+- A `tkinter`-based GUI enables image loading, processing, and saving with adjustable sliders for parameters like gamma, blur radius, and sharpening strength.  
+- The ISP pipeline includes demosaicing (edge-based interpolation, 5x5), white balancing (gray-world algorithm), denoising (Gaussian blur), gamma correction (sRGB mapping), and sharpening (unsharp masking).  
+- Users can apply stages individually or in combination, with real-time feedback on the output.  
 
-#### Combinations to Test:  
-Generate outputs with the following combinations and document observations in a report:  
-1. Demosaic + Gamma  
-2. Demosaic + White Balance + Gamma  
-3. Demosaic + White Balance + Denoise + Gamma  
-4. Demosaic + White Balance + Denoise + Gamma + Sharpen  
+**Usage**  
+- Input: A 12-bit Bayer raw image (GRBG, 1920x1280); Output: A 24-bit RGB image (8 bits per channel).  
+- Users can load an image, select specific processing stages, adjust parameters using sliders, and save the processed result.  
+- The workflow facilitates easy exploration of how different ISP techniques affect image quality.  
+
+**Combinations to Test**  
+- **Demosaic + Gamma Correction**: Evaluate the effects of converting raw data to a visually enhanced RGB image.  
+- **Demosaic + White Balance + Gamma Correction**: Assess improvements in color accuracy and overall tonal mapping.  
+- **Demosaic + White Balance + Denoise + Gamma Correction + Sharpening**: Observe cumulative effects of all stages on image quality.  
+
+**Observations**  
+- Each stage contributes uniquely, such as demosaicing for basic color formation and sharpening for detail enhancement.  
+- The GUI simplifies the process, making it easy to experiment with combinations and observe their impact.  
+- Documenting results highlights the importance of parameter tuning in optimizing image quality.  
 
 ---
 
@@ -102,6 +107,8 @@ Generate outputs with the following combinations and document observations in a 
 #### **Observations**
 - **Denoising Results**: Median Filter balances noise reduction and edge preservation, while Bilateral Filter offers the best edge retention with moderate noise reduction. Gaussian Filter, though efficient, can blur finer details.
 - **Edge Enhancement**: The Laplacian Filter sharpens edges effectively, and when combined with gamma correction, it enhances contrast before sharpening. Edge strength measurements help quantify how much detail is preserved in the sharpened images.
+
+---
 
 ### Assignment 3: HDR Imaging
 
