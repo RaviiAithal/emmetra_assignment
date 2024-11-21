@@ -25,7 +25,7 @@ Ensure you have Python 3.8 or later installed.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repository/hdr-image-processor.git
+   git clone https://github.com/emmetra_assignment/hdr-image-processor.git
    cd hdr-image-processor
    ```
 
@@ -84,22 +84,4 @@ The application uses the following libraries:
 - Add support for saving the processed HDR image directly.
 - Enhance the GUI for a more modern look.
 - Support for other HDR algorithms (e.g., Debevec, Robertson).
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-For questions or feedback, feel free to reach out:
-
-- **Name**: [Your Name]
-- **Email**: [your.email@example.com]
-- **GitHub**: [Your GitHub Profile](https://github.com/your-profile)
-
---- 
 
