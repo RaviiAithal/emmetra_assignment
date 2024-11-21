@@ -1,7 +1,3 @@
-Here's the **final README.md** file for your project:
-
----
-
 # Image Signal Processing Pipeline - Emmetra
 
 This project implements a basic **Image Signal Processing (ISP)** pipeline for sensor RAW images using a user-friendly GUI. The tool processes 12-bit Bayer RAW images and performs various ISP stages such as demosaicing, white balance, denoising, gamma correction, and sharpening. The GUI enables users to visualize and interact with the image processing pipeline.
@@ -32,6 +28,27 @@ This project implements a basic **Image Signal Processing (ISP)** pipeline for s
    - **Sharpen**: Refines image details.
 3. **Save Image**: The processed image can be saved in PNG format.
 
+---
+
+## GUI Overview
+
+Below is a snapshot of the **Image Signal Processing Pipeline - Emmetra** GUI:
+
+![ISP Pipeline GUI](path/to/your/gui_image.png)
+
+---
+
+### Steps to Add the Image:
+
+1. Save the screenshot of the GUI in the project directory (e.g., `images/gui_screenshot.png`).
+2. Replace `path/to/your/gui_image.png` with the actual path to the image in the repository.
+
+For example, if the image is stored in a folder named `images`, update the path as follows:
+```markdown
+![ISP Pipeline GUI](images/gui_screenshot.png)
+```
+
+Let me know if you need help with formatting or uploading the image!
 ---
 
 ## Installation
