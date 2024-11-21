@@ -7,10 +7,7 @@ This repository contains three assignments completed as part of the task provide
 - [Overview](#overview)  
 - [Structure](#structure)  
 - [Assignment Details](#assignment-details)  
-- [Setup Instructions](#setup-instructions)  
-- [How to Run](#how-to-run)  
-- [Outputs](#outputs)  
-- [License](#license)  
+
 
 ---
 
