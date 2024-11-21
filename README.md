@@ -22,7 +22,7 @@ This repository contains three assignments that demonstrate various coding and p
 - Documentation or README specific to the task  
 - Outputs (if applicable)  
 
-The assignments are implemented in **[insert programming language(s)]**, ensuring clean and efficient code.
+The assignments are implemented in **Python**, ensuring clean and efficient code.
 
 ---
 
