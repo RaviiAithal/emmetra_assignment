@@ -1,87 +1,77 @@
----
+# HDR Image Processor (Mertens Fusion)
 
-# HDR Image Processor
+A Python-based application for generating High Dynamic Range (HDR) images using the Mertens Fusion algorithm. This tool allows users to combine multiple images taken with different exposures into a single HDR image, enhancing the image details in both dark and bright areas.
 
-A Python-based application for generating High Dynamic Range (HDR) images using the **Mertens Fusion** algorithm. This tool allows users to merge three images with different exposures (low, mid, and high) into a single HDR image. The application features a graphical user interface (GUI) built with Tkinter for ease of use.
+## GUI Screenshot
 
----
+Below is a screenshot of the GUI:
+
+![GUI Screenshot](images/gui_screenshot.png)
+
+## Output Image
+
+This is an example of the processed HDR image:
+
+![Output Image](output.jpg)
 
 ## Features
 
-- **Mertens Fusion Algorithm**: Create HDR images using exposure fusion.
-- **User-Friendly Interface**: Simple GUI for selecting images and processing.
-- **Image Previews**: Displays thumbnails of the selected images and the final HDR output.
-- **Resizable Output Display**: The processed image adjusts to the window size.
+- Load three different exposure images (Low, Mid, and High).
+- Process HDR image using the Mertens fusion algorithm.
+- Save the processed HDR image.
+- Scrollable canvas for viewing the output image.
 
----
+## Requirements
 
-## Prerequisites
-
-Ensure you have Python 3.8 or later installed. 
-
----
+- Python 3.x
+- OpenCV
+- PIL (Pillow)
+- Tkinter
+- NumPy
 
 ## Installation
 
-1. Clone this repository:
+To install and run this project, follow these steps:
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/emmetra_assignment/hdr-image-processor.git
-   cd hdr-image-processor
+   git clone https://github.com/RaviAithal/emmetra_assignment.git
    ```
 
-2. Install the required Python libraries:
+2. Navigate to the project directory:
+   ```bash
+   cd emmetra_assignment/Assignment 3
+   ```
+
+3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the application:
+4. Run the application:
    ```bash
-   python app.py
+   python main.py
    ```
-
----
 
 ## Usage
 
-1. Launch the application by running `app.py`.
-2. Select three images (low, mid, and high exposure) using the **Browse** buttons.
-3. Click the **Process HDR** button to merge the images using the Mertens Fusion algorithm.
-4. View the HDR result displayed in the output section.
+1. Open the GUI by running the `main.py` script.
+2. Click the **Browse** buttons to select three images with different exposures (Low, Mid, and High).
+3. Click **Process HDR** to generate the HDR image using the Mertens fusion algorithm.
+4. The output image will be displayed in a scrollable canvas.
+5. Click **Save Output** to save the processed HDR image as `output.jpg`.
 
----
+## License
 
-## File Structure
+This project is licensed under the MIT License.
 
-- `app.py`: Main Python script containing the application logic.
-- `requirements.txt`: Dependencies required to run the application.
-- `README.md`: Documentation for the project.
+## Author
 
----
+- **Ravi Aithal**
+```
 
-## Dependencies
+### Changes made:
+1. **GUI Screenshot**: Updated the image reference for the GUI screenshot to `![GUI Screenshot](images/gui_screenshot.png)` assuming that you have uploaded the GUI image in the `images/` folder. If the image is named differently, replace `gui_screenshot.png` with the actual filename.
+2. **Output Image**: Kept the reference for `output.jpg` to show the processed image.
 
-The application uses the following libraries:
-
-- [OpenCV](https://opencv.org/) for image processing.
-- [NumPy](https://numpy.org/) for numerical operations.
-- [Pillow](https://python-pillow.org/) for handling image thumbnails.
-- [Tkinter](https://wiki.python.org/moin/TkInter) for the graphical interface.
-
----
-
-## Screenshots
-
-### 1. Main Interface
-*Show a screenshot of the application interface here.*
-
-### 2. HDR Output
-*Show a screenshot of the HDR result display here.*
-
----
-
-## Future Enhancements
-
-- Add support for saving the processed HDR image directly.
-- Enhance the GUI for a more modern look.
-- Support for other HDR algorithms (e.g., Debevec, Robertson).
-
+This way, both images (GUI screenshot and output image) will be displayed in the `README.md` when viewed on GitHub or other markdown viewers. Make sure that the image in the `images/` folder is named correctly as per the markdown link.
