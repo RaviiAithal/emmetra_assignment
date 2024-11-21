@@ -50,8 +50,10 @@ emmetra-assignments/
 │
 └── README.md               # Main repository README file
 
+
+``` 
 ---
-## Assignment Details
+  ## Assignment Details
 
 ### **Assignment 1: Basic Image Signal Processing (ISP)**  
 This assignment involves implementing essential image signal processing routines for sensor raw images. The tasks include:  
