@@ -1,6 +1,6 @@
 # Emmetra Assignments
 
-Welcome to the **Emmetra Assignments Repository**. This repository contains three assignments completed as part of the task provided by Emmetra. Each assignment includes its source code, outputs, and any relevant documentation.
+This repository contains three assignments completed as part of the task provided by Emmetra. Each assignment includes its source code, outputs, and any relevant documentation.
 
 ## Table of Contents
 
