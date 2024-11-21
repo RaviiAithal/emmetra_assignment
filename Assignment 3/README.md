@@ -1,5 +1,3 @@
-Below is a `README.md` file for your project:
-
 ---
 
 # HDR Image Processor
