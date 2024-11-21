@@ -6,7 +6,7 @@ A Python-based application for generating High Dynamic Range (HDR) images using 
 
 Below is a screenshot of the GUI:
 
-![GUI Screenshot](images/gui_screenshot.png)
+![GUI Screenshot](images/gui.jpg)
 
 ## Output Image
 
