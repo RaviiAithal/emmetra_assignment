@@ -77,29 +77,59 @@ Generate outputs with the following combinations and document observations in a 
 
 ---
 
-### **Assignment 2: Denoise and Sharpness Techniques**  
-This assignment explores and compares denoising and sharpness techniques.
+### Assignment 2: Denoise and Sharpness Techniques
 
-#### Denoising Techniques:  
-1. Implement Median filter.  
-2. Implement Bilateral filter.  
-3. Compare both with the Gaussian filter from Assignment 1.  
-4. Use an AI-based model (e.g., U-Net, FFDNet) for image denoising.  
-5. Compute spatial signal-to-noise ratio (SSNR) for three gray tones to compare the methods.  
-
-#### Edge Enhancement Techniques:  
-1. Implement Laplacian filter-based enhancement.  
-2. Compare with unsharp masking from Assignment 1.  
-3. Compute edge strength using gradient-based approaches.  
-
-#### Input and Output:  
-- **Input:** Same Bayer raw image as Assignment 1.  
-- **Output:** Processed 24-bit RGB image.
-
-#### Tools:  
-Use **PixelViewer** or **IrfanView** (with RAW plugin) for visualizing input and output images.
+#### **Objective**  
+Implement and compare denoising and edge enhancement techniques for Bayer raw images.
 
 ---
+
+#### **Features**
+
+1. **Denoising**:
+   - **Median Filter**, **Bilateral Filter**, **Gaussian Filter** for noise reduction.
+   - **SSNR Calculation**: Computes signal-to-noise ratio for method comparison.
+
+2. **Edge Enhancement**:
+   - **Laplacian Filter** for sharpening edges.
+   - **Gamma Correction**: Adjusts image contrast before sharpening.
+   - **Edge Strength**: Measures edge clarity after processing.
+
+3. **Comparison**:
+   - Denoising methods and edge enhancement techniques evaluated based on SSNR and edge strength.
+
+---
+
+#### **Usage**
+
+1. **Input**: Bayer raw image (`task2image.raw`).
+2. **Run Script**:  
+   - Demosaic Bayer image to RGB.
+   - Apply denoising filters (Median, Bilateral, Gaussian) and sharpen with Laplacian.
+   - Save processed images: `denoised_<method>.png`, `sharpened_<method>.png`.
+
+---
+
+#### **Requirements**
+
+- **Dependencies**: `opencv-python-headless`, `numpy`.
+- **Tools**: Use PixelViewer or IrfanView to view results.
+- **Resolution**: Ensure consistent resolution for input images.
+
+---
+
+#### **Observations**
+
+1. **Denoising**:
+   - **Median Filter**: Balanced noise reduction and edge preservation.
+   - **Bilateral Filter**: Best for edge retention, moderate noise reduction.
+   - **Gaussian Filter**: Smooths effectively but loses detail.
+
+2. **Edge Enhancement**:
+   - **Laplacian Filter**: Enhances sharpness.
+   - Compared with unsharp masking from Assignment 1 for edge clarity.
+
+3. **Metrics**: SSNR and edge strength quantify denoising and sharpening effectiveness.
 
 ### Assignment 3: HDR Imaging
 
