@@ -94,7 +94,7 @@ Generate outputs with the following combinations and document observations in a 
 - Denoising techniques are applied, followed by Laplacian sharpening with gamma correction.
 - Results are saved as 24-bit RGB images, ready for further analysis or visualization.
 
-  #### **Requirements**
+#### **Requirements**
 - **Dependencies**: Requires `opencv-python-headless` and `numpy` libraries for image processing tasks.
 - **Visualization Tools**: Use PixelViewer or IrfanView for viewing raw images and processed outputs.
 - **Image Consistency**: Ensure input images have a consistent resolution for accurate processing across different techniques.
