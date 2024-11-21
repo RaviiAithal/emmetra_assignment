@@ -34,7 +34,7 @@ This project implements a basic **Image Signal Processing (ISP)** pipeline for s
 
 Below is a snapshot of the **Image Signal Processing Pipeline - Emmetra** GUI:
 
-![ISP Pipeline GUI](Assignment 1/GUI.jpg)
+![ISP Pipeline GUI](GUI.jpg)
 
 ---
 
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 1. Clone the repository or copy the script file into your working directory.
 2. Run the script:
    ```bash
-   python isp_pipeline_gui.py
+   python main.py
    ```
 3. Use the GUI to load, process, and save images.
 
