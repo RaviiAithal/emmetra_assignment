@@ -34,21 +34,8 @@ This project implements a basic **Image Signal Processing (ISP)** pipeline for s
 
 Below is a snapshot of the **Image Signal Processing Pipeline - Emmetra** GUI:
 
-![ISP Pipeline GUI](path/to/your/gui_image.png)
+![ISP Pipeline GUI](Assignment 1/GUI.jpg)
 
----
-
-### Steps to Add the Image:
-
-1. Save the screenshot of the GUI in the project directory (e.g., `images/gui_screenshot.png`).
-2. Replace `path/to/your/gui_image.png` with the actual path to the image in the repository.
-
-For example, if the image is stored in a folder named `images`, update the path as follows:
-```markdown
-![ISP Pipeline GUI](images/gui_screenshot.png)
-```
-
-Let me know if you need help with formatting or uploading the image!
 ---
 
 ## Installation
