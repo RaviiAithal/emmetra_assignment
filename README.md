@@ -79,49 +79,29 @@ Generate outputs with the following combinations and document observations in a 
 
 ### Assignment 2: Denoise and Sharpness Techniques
 
-#### **Objective**  
-Implement and compare denoising and edge enhancement techniques for Bayer raw images.
+#### **Objective**
+- Apply and compare denoising and edge enhancement techniques to Bayer raw images.
+- Use different filters (Median, Bilateral, and Gaussian) for denoising and assess their performance.
+- Evaluate the effectiveness of each technique through SSNR and edge strength metrics.
 
 #### **Features**
-
-1. **Denoising**:
-   - **Median Filter**, **Bilateral Filter**, **Gaussian Filter** for noise reduction.
-   - **SSNR Calculation**: Computes signal-to-noise ratio for method comparison.
-
-2. **Edge Enhancement**:
-   - **Laplacian Filter** for sharpening edges.
-   - **Gamma Correction**: Adjusts image contrast before sharpening.
-   - **Edge Strength**: Measures edge clarity after processing.
-
-3. **Comparison**:
-   - Denoising methods and edge enhancement techniques evaluated based on SSNR and edge strength.
+- **Denoising**: Implement Median, Bilateral, and Gaussian filters to reduce noise with varying approaches, maintaining image quality.
+- **Edge Enhancement**: Apply Laplacian Filter for sharpening edges and use Gamma Correction to adjust image contrast before sharpening.
+- **Evaluation**: Use SSNR for comparing denoising methods and edge strength metrics to quantify the sharpness of the processed images.
 
 #### **Usage**
+- The script processes Bayer raw images by first demosaicing them to RGB format.
+- Denoising techniques are applied, followed by Laplacian sharpening with gamma correction.
+- Results are saved as 24-bit RGB images, ready for further analysis or visualization.
 
-1. **Input**: Bayer raw image (`task2image.raw`).
-2. **Run Script**:  
-   - Demosaic Bayer image to RGB.
-   - Apply denoising filters (Median, Bilateral, Gaussian) and sharpen with Laplacian.
-   - Save processed images: `denoised_<method>.png`, `sharpened_<method>.png`.
-
-#### **Requirements**
-
-- **Dependencies**: `opencv-python-headless`, `numpy`.
-- **Tools**: Use PixelViewer or IrfanView to view results.
-- **Resolution**: Ensure consistent resolution for input images.
+  #### **Requirements**
+- **Dependencies**: Requires `opencv-python-headless` and `numpy` libraries for image processing tasks.
+- **Visualization Tools**: Use PixelViewer or IrfanView for viewing raw images and processed outputs.
+- **Image Consistency**: Ensure input images have a consistent resolution for accurate processing across different techniques.
 
 #### **Observations**
-
-1. **Denoising**:
-   - **Median Filter**: Balanced noise reduction and edge preservation.
-   - **Bilateral Filter**: Best for edge retention, moderate noise reduction.
-   - **Gaussian Filter**: Smooths effectively but loses detail.
-
-2. **Edge Enhancement**:
-   - **Laplacian Filter**: Enhances sharpness.
-   - Compared with unsharp masking from Assignment 1 for edge clarity.
-
-3. **Metrics**: SSNR and edge strength quantify denoising and sharpening effectiveness.
+- **Denoising Results**: Median Filter balances noise reduction and edge preservation, while Bilateral Filter offers the best edge retention with moderate noise reduction. Gaussian Filter, though efficient, can blur finer details.
+- **Edge Enhancement**: The Laplacian Filter sharpens edges effectively, and when combined with gamma correction, it enhances contrast before sharpening. Edge strength measurements help quantify how much detail is preserved in the sharpened images.
 
 ### Assignment 3: HDR Imaging
 
