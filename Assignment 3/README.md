@@ -103,4 +103,3 @@ For questions or feedback, feel free to reach out:
 
 --- 
 
-Replace placeholder sections with your specific details (e.g., repository URL, screenshots, and contact information).
