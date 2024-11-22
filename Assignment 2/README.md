@@ -95,7 +95,7 @@ The Bilateral Filter achieved the highest Signal-to-Noise Ratio (SNR) across all
 
 ### **Best Sharpening Method**
 The Bilateral Filter also demonstrated the highest edge strength, making it the most effective in enhancing image edges without over-smoothing.
-
+---
 ## **How to Run**
 
 1. Install the required dependencies:
