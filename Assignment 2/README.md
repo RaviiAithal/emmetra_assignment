@@ -57,29 +57,6 @@ pip install opencv-python numpy tensorflow
 
 ---
 
-## **Processing Stages Overview**
-
-| **Stage**          | **Description**                                                        |
-|---------------------|------------------------------------------------------------------------|
-| **Demosaic**        | Converts Bayer RAW to RGB using edge-based interpolation.             |
-| **White Balance**   | Balances color channels using the gray-world algorithm.               |
-| **Denoise**         | Reduces noise using Median, Bilateral, or Gaussian filters.           |
-| **Gamma Correct**   | Applies sRGB gamma correction (default gamma = 1.2).                  |
-| **Sharpen**         | Enhances edges using Laplacian-based sharpening.                      |
-
----
-
-## **Example Combinations**
-
-This tool allows users to generate outputs with various stage combinations for comparison. Example combinations include:
-
-- **Demosaic + Gamma Correction**  
-- **Demosaic + White Balance + Gamma Correction**  
-- **Demosaic + White Balance + Denoise + Gamma Correction**  
-- **Demosaic + White Balance + Denoise + Gamma Correction + Sharpen**  
-
----
-
 ## **Metrics Evaluation**
 
 - **Signal-to-Noise Ratio (SNR)**:  
