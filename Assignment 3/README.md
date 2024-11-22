@@ -61,3 +61,7 @@ To install and run this project, follow these steps:
 4. The output image will be displayed in a scrollable canvas.
 5. Click **Save Output** to save the processed HDR image as `output.jpg`.
 
+---
+## Challenges Faced
+
+We also tried to implement other algorithms such as `Debevac`, `Robertson` etc. Among all the algorithms, `fusion marten` gave comparatively better results.
