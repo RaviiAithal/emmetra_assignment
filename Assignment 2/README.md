@@ -15,44 +15,44 @@ This project implements various denoising and edge enhancement techniques to pro
 
 ---
 
-## ***Workflow***
+## **Workflow**
 
-**Step 1: Load Bayer Raw Image**
+**Step 1: Load Bayer Raw Image**: 
 Load the .raw file using np.fromfile().
 Reshape the data to match the image resolution (e.g., 1280x1920).
 Scale the image to a 12-bit range (0–4095) using bit-shifting.
 
-**Step 2: Normalize to 8-bit Range**
+**Step 2: Normalize to 8-bit Range**: 
 Use cv2.normalize() to map the 12-bit values to the 8-bit range (0–255).
 Convert the normalized data to uint8.
 
-**Step 3: Demosaicing**
+**Step 3: Demosaicing**: 
 Convert the Bayer raw image to an RGB image using cv2.cvtColor() with the cv2.COLOR_BAYER_GR2BGR flag.
 
-**Step 4: White Balancing**
+**Step 4: White Balancing**: 
 Split the RGB image into Blue, Green, and Red channels.
 Compute the mean intensity of each channel.
 Calculate gains to equalize channel intensities and scale each channel.
 Merge the adjusted channels back into an RGB image.
 
-**Step 5: Denoising**
+**Step 5: Denoising**: 
 Apply Median Blur using cv2.medianBlur().
 Apply Bilateral Filter using cv2.bilateralFilter().
 Apply Gaussian Blur using cv2.GaussianBlur().
 
-**Step 6: Signal-to-Noise Ratio (SNR) Computation**
+**Step 6: Signal-to-Noise Ratio (SNR) Computation**: 
 Define regions for noise analysis in the image.
 Compute SNR for each region using the formula:
 SNR =20 
 Repeat for all denoising methods.
 
-**Step 7: Gamma Correction and Sharpening**
+**Step 7: Gamma Correction and Sharpening**: 
 Gamma Correction
 Adjust pixel intensity values using a lookup table based on the gamma value.
 Laplacian Sharpening
 Apply sharpening with a Laplacian kernel using cv2.filter2D().
 
-**Step 8: Edge Strength Computation**
+**Step 8: Edge Strength Computation**: 
 Convert the image to grayscale.
 Compute Sobel gradients in the x and y directions.
 Calculate edge strength as the mean magnitude of gradient vectors.
