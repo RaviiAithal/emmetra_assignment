@@ -15,28 +15,47 @@ This project implements various denoising and edge enhancement techniques to pro
 
 ---
 
-## **Tasks**
+## ***Workflow***
 
-### **1. Denoising**
-- **Traditional Methods**:
-  - Median filter
-  - Bilateral filter
-  - Compare with Gaussian filter from Assignment 1
-- **SNR Computation**:
-  - Compute the spatial Signal-to-Noise Ratio (SNR) for **three gray tones** as specified by [Imatest Imaging Noise Guide](https://www.imatest.com/imaging/noise/).
+**Step 1: Load Bayer Raw Image**
+Load the .raw file using np.fromfile().
+Reshape the data to match the image resolution (e.g., 1280x1920).
+Scale the image to a 12-bit range (0–4095) using bit-shifting.
 
-### **2. Edge Enhancement**
-- Implement **Laplacian filter-based enhancement**.
-- Compare the results with other sharpness enhancement methods.
-- Compute **Edge Strength** using gradient-based approaches for all implemented methods.
+**Step 2: Normalize to 8-bit Range**
+Use cv2.normalize() to map the 12-bit values to the 8-bit range (0–255).
+Convert the normalized data to uint8.
 
-### **3. Processing Pipeline**
-- Use the ISP pipeline from Assignment 1 for **Bayer RAW image processing**.
-- Input: 12-bit Bayer RAW image.
-- Output: RGB image with 24 bits per pixel (8 bits per channel).
+**Step 3: Demosaicing**
+Convert the Bayer raw image to an RGB image using cv2.cvtColor() with the cv2.COLOR_BAYER_GR2BGR flag.
 
-### **4. Reporting**
-- Generate a report comparing **SNR**, **Edge Strength**, and visual quality metrics for all methods. Also the output is compared with the pretrained ai models. FFDNET is used to denoise. It is not uploaded to this repository.
+**Step 4: White Balancing**
+Split the RGB image into Blue, Green, and Red channels.
+Compute the mean intensity of each channel.
+Calculate gains to equalize channel intensities and scale each channel.
+Merge the adjusted channels back into an RGB image.
+
+**Step 5: Denoising**
+Apply Median Blur using cv2.medianBlur().
+Apply Bilateral Filter using cv2.bilateralFilter().
+Apply Gaussian Blur using cv2.GaussianBlur().
+
+**Step 6: Signal-to-Noise Ratio (SNR) Computation**
+Define regions for noise analysis in the image.
+Compute SNR for each region using the formula:
+SNR =20 
+Repeat for all denoising methods.
+
+**Step 7: Gamma Correction and Sharpening**
+Gamma Correction
+Adjust pixel intensity values using a lookup table based on the gamma value.
+Laplacian Sharpening
+Apply sharpening with a Laplacian kernel using cv2.filter2D().
+
+**Step 8: Edge Strength Computation**
+Convert the image to grayscale.
+Compute Sobel gradients in the x and y directions.
+Calculate edge strength as the mean magnitude of gradient vectors.
 
 ---
 ### **FFD_NET**
@@ -76,8 +95,9 @@ This project implements various denoising and edge enhancement techniques to pro
 
 ---
 
-## **Output**
-
+## 
+**Output**
+![Denoised and Sharpened output of all three methods](https://github.com/user-attachments/assets/7de1de8a-67eb-4fd8-92e1-b6fefa0898a7)
 ### **SNR Values**:
 ```plaintext
 Gaussian: [35.90, 36.50, 34.78]
@@ -93,6 +113,7 @@ Median: 51.45
 Bilateral: 52.18
 FFDNet: 27.07
 ```
+
 ---
 ## **Conclusion**
 ### **Best Denoising Method**
@@ -100,6 +121,7 @@ The Bilateral Filter achieved the highest Signal-to-Noise Ratio (SNR) across all
 
 ### **Best Sharpening Method**
 The Bilateral Filter also demonstrated the highest edge strength, making it the most effective in enhancing image edges without over-smoothing.
+
 ---
 ## **How to Run**
 
