@@ -12,7 +12,7 @@ This project implements various denoising and edge enhancement techniques to pro
 
 ---
 
-## IMplementation Workflow
+## Implementation Workflow
 
 ## Step 1: Load Bayer Raw Image
 - Load the `.raw` file using `np.fromfile()`.
