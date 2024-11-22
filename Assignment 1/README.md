@@ -88,5 +88,7 @@ This tool allows users to generate outputs with various stage combinations for c
 - Demosaic + White Balance + Denoise + Gamma Correction
 - Demosaic + White Balance + Denoise + Gamma Correction + Sharpen
 
+![Various stages combinations applied to Test_InputAssignment 1](outputs/Assignment_1_Output.png)
+
 ---
 
