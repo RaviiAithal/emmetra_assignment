@@ -4,7 +4,9 @@
 This project implements various denoising and edge enhancement techniques to process a 12-bit Bayer RAW image and assess image quality using metrics like **Signal-to-Noise Ratio (SNR)** and **Edge Strength**.
 
 ---
-
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)  [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blueviolet?logo=opencv)](https://opencv.org/)  
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)  [![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)](#contributing)  [![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen)](#)  
+[![Build](https://img.shields.io/badge/build-passing-brightgreen?logo=githubactions)](#)
 ## **Objective**
 
 - Implement and compare different techniques for **denoising** and **sharpness enhancement**.
