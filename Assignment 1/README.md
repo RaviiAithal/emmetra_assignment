@@ -80,9 +80,9 @@ pip install -r requirements.txt
 
 ---
 
-## Example Combinations
+## Combinations and Recorder Observations
 
-This tool allows users to generate outputs with various stage combinations for comparison. Example combinations:
+This tool allows users to generate outputs with various stage combinations for comparison.
 - Demosaic + Gamma Correction
 - Demosaic + White Balance + Gamma Correction
 - Demosaic + White Balance + Denoise + Gamma Correction
