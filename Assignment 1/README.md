@@ -92,3 +92,11 @@ This tool allows users to generate outputs with various stage combinations for c
 
 ---
 
+## Challenges faced
+
+- Implemented Demosaicing using edge interpolation 5x5 technique but integration problem with the Image Signal Processing(ISP) Pipeline therefore utilised OpenCV's inbuilt demosaicing algorithm, cv2.cvtColor(bayer_image_normalized, cv2.COLOR_BAYER_GR2BGR) which uses linear interpolation algorithm. The demosaicing code for edge interpolation 5x5 can be found in the same folder.
+- Incorrect mapping of gamma values leading to overly bright images. Fixed it by custom user tuning for gamma value depending on the image.
+- Incorrect display of output images due to wrong channel configurations. OpenCV works in BGR while display needed to be RGB. Corrected it by going through documentation.
+
+---
+
