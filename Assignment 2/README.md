@@ -39,6 +39,9 @@ This project implements various denoising and edge enhancement techniques to pro
 - Generate a report comparing **SNR**, **Edge Strength**, and visual quality metrics for all methods. Also the output is compared with the pretrained ai models. FFDNET is used to denoise. It is not uploaded to this repository.
 
 ---
+### **FFD_NET**
+- We also used ffd_net to denoise the images for comparision. The pretrained models are used to denoise. Follow the ffd_net implementation to run the code. Changes are made to utils.py and test_ffdnet_ipol.py due the change in functions of scikit-image and other libraries.  
+---
 
 ## **Input Requirements**
 
