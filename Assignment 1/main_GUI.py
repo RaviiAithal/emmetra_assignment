@@ -186,7 +186,8 @@ class ImageProcessorApp:
         )
         if file_path:
             try:
-                cv2.imwrite(file_path, cv2.cvtColor(self.processed_image, cv2.COLOR_RGB2BGR))
+                #rgb_image = cv2.cvtColor(self.processed_image, cv2.COLOR_BGR2RGB) # NOT CONVERTING SINCE IT'S ALREADY IN RGB
+                cv2.imwrite(file_path, self.processed_image)
                 messagebox.showinfo("Success", f"Image saved to {file_path}")
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to save image: {e}")
