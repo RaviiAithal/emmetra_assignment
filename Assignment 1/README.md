@@ -27,6 +27,7 @@ This project implements a basic **Image Signal Processing (ISP)** pipeline for s
    - **Gamma Correct**: Enhances brightness.
    - **Sharpen**: Refines image details.
 3. **Save Image**: The processed image can be saved in PNG format.
+- The GUI works better on `Windows` environment
 
 ---
 
