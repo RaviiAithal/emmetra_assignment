@@ -40,7 +40,7 @@ This project implements various denoising and edge enhancement techniques to pro
 
 ---
 ### **FFD_NET**
-- We also used ffd_net to denoise the images for comparision. The pretrained models are used to denoise. Follow the ffd_net implementation to run the code. Changes are made to utils.py and test_ffdnet_ipol.py due the change in functions of scikit-image and other libraries.  
+- We also used `ffd_net` to denoise the images for comparision. The pretrained models are used to denoise. Follow the ffd_net implementation to run the code. Changes are made to `utils.py` and `test_ffdnet_ipol.py` due the change in functions of `scikit-image` and other libraries. To vary the noise change `noise-sigma`. The values are ranged between 0 to 255. which is later mapped between 0 to 1.   
 ---
 
 ## **Input Requirements**
