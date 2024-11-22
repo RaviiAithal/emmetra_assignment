@@ -185,7 +185,11 @@ The Bilateral Filter also demonstrated the highest edge strength, making it the 
 3. **View Results**:
    - Processed images will be saved in the current directory:
      - `denoised_median.png`
-     - `sharpened_laplacian.png`
+     - `denoised_gaussian.png`
+     - `denoised_billateral.png`
+     - `sharpened_median.png`
+     - `sharpened_gaussian.png`
+     - `sharpened_billateral.png`
    - Console output will display **SNR** and **Edge Strength** values.
 
 ---
