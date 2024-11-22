@@ -51,14 +51,6 @@ This project implements various denoising and edge enhancement techniques to pro
 
 ---
 
-## **Tools**
-
-- **Image Viewers**:
-  - **PixelViewer**
-  - **Irfanview** (with RAW plugin)
-
----
-
 ## **Implementation Steps**
 
 1. **Load Bayer RAW Image**:
