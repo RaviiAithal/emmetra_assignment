@@ -101,11 +101,11 @@ Bilateral: 52.18
 
 ## **How to Run**
 
-1. **Set Up Environment**:
-   - Install required libraries:
-     ```bash
-     pip install numpy opencv-python
-     ```
+1. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+     
 
 2. **Run the Script**:
    - Place the input RAW file (`task2image.raw`) in the project directory.
