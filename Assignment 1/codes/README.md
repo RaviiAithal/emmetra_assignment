@@ -1,4 +1,3 @@
----
 
 ### Initial Approach: 5x5 Edge Interpolation Algorithm
 We initially implemented a **5x5 edge-aware interpolation algorithm** for the **demosaicing** stage. This algorithm uses a 5x5 kernel to interpolate missing color values based on edge direction and intensity gradients in the raw image.
