@@ -36,7 +36,7 @@ This project implements various denoising and edge enhancement techniques to pro
 - Output: RGB image with 24 bits per pixel (8 bits per channel).
 
 ### **4. Reporting**
-- Generate a report comparing **SNR**, **Edge Strength**, and visual quality metrics for all methods.
+- Generate a report comparing **SNR**, **Edge Strength**, and visual quality metrics for all methods. Also the output is compared with the pretrained ai models. FFDNET is used to denoise. It is not uploaded to this repository.
 
 ---
 
