@@ -80,6 +80,7 @@ This project implements various denoising and edge enhancement techniques to pro
 Gaussian: [35.90, 36.50, 34.78]
 Median: [37.10, 36.98, 35.42]
 Bilateral: [38.45, 37.12, 36.89]
+FFDNet : [36.72, 20.91 , 22.57]
 ```
 
 ### **Edge Strength**:
@@ -87,6 +88,7 @@ Bilateral: [38.45, 37.12, 36.89]
 Gaussian: 50.12
 Median: 51.45
 Bilateral: 52.18
+FFDNet: 27.07
 ```
 ---
 ## **Conclusion**
