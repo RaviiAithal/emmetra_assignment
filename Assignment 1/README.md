@@ -81,7 +81,7 @@ pip install -r requirements.txt
 
 ---
 
-## Combinations and Recorder Observations
+## Combinations and Recorded Observations
 
 This tool allows users to generate outputs with various stage combinations for comparison.
 - Demosaic + Gamma Correction
